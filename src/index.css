@@ -28,11 +28,12 @@ a:hover {
 }
 
 body {
-    margin: 0;
+    left: 0;
     display: flex;
-    place-items: center;
+    align-items: start;
     min-width: 320px;
     min-height: 100vh;
+    border: 1px solid red;
 }
 
 h1 {
