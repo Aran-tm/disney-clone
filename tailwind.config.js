@@ -1,11 +1,16 @@
+// tailwind.config.js
+import tailwindcssNoScrollbar from 'tailwindcss-no-scrollbar';
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
+ content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
+ ],
+ theme: {
     extend: {},
-  },
-  plugins: [],
+ },
+ plugins: [
+    tailwindcssNoScrollbar
+ ],
 }
