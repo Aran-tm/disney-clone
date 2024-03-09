@@ -33,17 +33,20 @@ export const Header = () => {
   ]
 
  return (
-    <div className='flex items-center gap-8'>
-      {/* Este es un comentario en React */}
-      {/* Este es Logo */}
-      <img src={Logo} className='w-[80px] md:w-[115px] object-cover'/>
+     <div className='flex items-center gap-8 justify-between'>
+      <div className='flex'>
+        {/* Este es un comentario en React */}
+        {/* Este es Logo */}
+        <img src={Logo} className='w-[80px] md:w-[115px] object-cover'/>
+        
+        {/* Estos son los iconos del header
+            Los iconos son usando ICONIFY */}
+        {menu.map((item, index) => {
+            return <HeaderItem key={index} icon={item.icon} name={item.name} />;
+        })}
+      </div>
       
-      {/* Estos son los iconos del header
-        Los iconos son usando ICONIFY */}
-      {menu.map((item, index) => {
-        return <HeaderItem key={index} icon={item.icon} name={item.name} />;
-      })}
-      
+      <img src='https://plugins.svn.wordpress.org/user-avatar-reloaded/assets/icon-256x256.png' className='w-[40px] rounded-full'/>
     </div>
  );
 };
