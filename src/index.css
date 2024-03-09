@@ -22,7 +22,6 @@ body {
     align-items: start;
     min-width: 320px;
     min-height: 100vh;
-    border: 1px solid red;
 }
 
 header {

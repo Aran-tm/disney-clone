@@ -41,7 +41,7 @@ export const Header = () => {
      <div className='flex items-center justify-between p-1'>
       <div className='flex gap-10 items-center'>
         {/* Este es un comentario en React */}
-        {/* Este es Logo */}
+        {/* Este es Disney Logo */}
         <img src={Logo} className='w-[120px] md:w-[135px] object-cover'/>
         
         <div className='hidden md:flex gap-9 mt-3'>
@@ -74,7 +74,7 @@ export const Header = () => {
         
       </div>
       
-      <img src='https://plugins.svn.wordpress.org/user-avatar-reloaded/assets/icon-256x256.png' className='w-[40px] rounded-full ml-64'/>
+      <img src='https://plugins.svn.wordpress.org/user-avatar-reloaded/assets/icon-256x256.png' className='w-[40px] rounded-full mr-4'/>
     </div>
  );
 };
