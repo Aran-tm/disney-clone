@@ -6,7 +6,7 @@ import HeaderItem from './HeaderItem';  // componente HEADER
 export const Header = () => {
 
   // use state
-    const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   // iconos guardados en variable
   const menu = [
