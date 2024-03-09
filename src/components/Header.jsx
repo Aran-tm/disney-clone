@@ -39,8 +39,13 @@ export const Header = () => {
       <img src={Logo} className='w-[80px] md:w-[115px] object-cover'/>
       
       {/* Estos son los iconos del header */}
-      {menu.map((item) => {
-         return <HeaderItem name={item.name} icon={item.icon}  />
+      {menu.map((item, index) => {
+         return (
+           <div key={index}>
+             {item.icon}
+             <h2>{item.name}</h2>
+           </div>
+         );
       })}
       
     </div>
