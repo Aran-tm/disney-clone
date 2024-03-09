@@ -18,10 +18,12 @@ function Slider() {
       })
   }
 
-  return (
-    <div>
+    return (
+      //  Con overflow-x-auto me pone un scrollbar 
+      <div className='flex overflow-x-auto'>
         {movieList.map((item) => (
-            <img key={item.id} src={IMAGE_BASE_URL + item.backdrop_path} alt={item.title} />
+            <img key={item.id} src={IMAGE_BASE_URL + item.backdrop_path} alt={item.title}
+            className='min-w-full h-[410px] object-cover object-left-top'/>
         ))}
     </div>
   )
