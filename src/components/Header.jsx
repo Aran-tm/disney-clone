@@ -1,8 +1,12 @@
-// componente HEADER
-import Logo from '../assets/images/disney_logo.png'
-import HeaderItem from './HeaderItem';
+
+import { useState } from 'react';   // cargo el use state 
+import Logo from '../assets/images/disney_logo.png'     // se carga el logo
+import HeaderItem from './HeaderItem';  // componente HEADER
 
 export const Header = () => {
+
+  // use state
+    const [toggle, setToggle] = useState(false);
 
   // iconos guardados en variable
   const menu = [
@@ -56,15 +60,16 @@ export const Header = () => {
         </div>
         <div className='md:hidden'>
             {/* Icono de tres puntos */}
-            <div className='text-white flex items-center gap-3 text-[15px] font-semibold cursor-pointer hover:underline underline-offset-8'>
+            <div onClick={() => setToggle(!toggle)}  className='text-white flex items-center gap-3 text-[15px] font-semibold cursor-pointer hover:underline underline-offset-8'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 20 20"><g fill="currentColor"><circle cx="10" cy="15" r="2"/><circle cx="10" cy="10" r="2"/><circle cx="10" cy="5" r="2"/></g></svg>
             </div> 
 
-            <div className='absolute mt-3 bg-[#121212] border-[1px] p-3'>
-                {menu.map((item, index) => index > 3 && (
+            {toggle?
+            <div className='absolute mt-3 bg-[#121212] border-[1px] px-5 py-4 border-gray-700 rounded-md'>
+                {menu.map((item, index) => index > 2 && (
                     <HeaderItem key={index} icon={item.icon} name={item.name} />
                 ))}
-            </div>     
+            </div>:null}  
         </div>
         
       </div>
