@@ -40,12 +40,7 @@ export const Header = () => {
       
       {/* Estos son los iconos del header */}
       {menu.map((item, index) => {
-         return (
-           <div key={index}>
-             {item.icon}
-             <h2>{item.name}</h2>
-           </div>
-         );
+        return <HeaderItem key={index} icon={item.icon} name={item.name} />;
       })}
       
     </div>
