@@ -33,11 +33,11 @@ export const Header = () => {
   ]
 
  return (
-     <div className='flex items-center gap-8 justify-between'>
-      <div className='flex'>
+     <div className='flex items-center justify-between p-3'>
+      <div className='flex gap-8 items-center'>
         {/* Este es un comentario en React */}
         {/* Este es Logo */}
-        <img src={Logo} className='w-[80px] md:w-[115px] object-cover'/>
+        <img src={Logo} className='w-[80px] md:w-[125px] object-cover'/>
         
         {/* Estos son los iconos del header
             Los iconos son usando ICONIFY */}
@@ -46,7 +46,7 @@ export const Header = () => {
         })}
       </div>
       
-      <img src='https://plugins.svn.wordpress.org/user-avatar-reloaded/assets/icon-256x256.png' className='w-[40px] rounded-full'/>
+      <img src='https://plugins.svn.wordpress.org/user-avatar-reloaded/assets/icon-256x256.png' className='w-[40px] rounded-full ml-96'/>
     </div>
  );
 };
