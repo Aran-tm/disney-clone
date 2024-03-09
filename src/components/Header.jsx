@@ -44,7 +44,7 @@ export const Header = () => {
         {/* Este es Logo */}
         <img src={Logo} className='w-[120px] md:w-[135px] object-cover'/>
         
-        <div className='hidden md:flex gap-8 mt-3'>
+        <div className='hidden md:flex gap-9 mt-3'>
             {/* Estos son los iconos del header
                 Los iconos son usando ICONIFY */}
             {menu.map((item, index) => {
@@ -74,7 +74,7 @@ export const Header = () => {
         
       </div>
       
-      <img src='https://plugins.svn.wordpress.org/user-avatar-reloaded/assets/icon-256x256.png' className='w-[40px] rounded-full ml-56'/>
+      <img src='https://plugins.svn.wordpress.org/user-avatar-reloaded/assets/icon-256x256.png' className='w-[40px] rounded-full ml-64'/>
     </div>
  );
 };
