@@ -24,7 +24,7 @@ export const Header = () => {
     },
     {
         name: 'Movies',
-        icon: <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><g fill="none" stroke="currentColor"><path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"/><path d="M24 18a3 3 0 1 0 0-6a3 3 0 0 0 0 6Zm0 18a3 3 0 1 0 0-6a3 3 0 0 0 0 6Zm-9-9a3 3 0 1 0 0-6a3 3 0 0 0 0 6Zm18 0a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"/><path d="M24 44h20"/></g></svg>
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M18.001 20H20v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.985 9.985 0 0 1-3.999 8M12 10a2 2 0 1 0 0-4a2 2 0 0 0 0 4m-4 4a2 2 0 1 0 0-4a2 2 0 0 0 0 4m8 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4m-4 4a2 2 0 1 0 0-4a2 2 0 0 0 0 4"/></svg>
     },
     {
         name: 'Series',
@@ -38,7 +38,8 @@ export const Header = () => {
       {/* Este es Logo */}
       <img src={Logo} className='w-[80px] md:w-[115px] object-cover'/>
       
-      {/* Estos son los iconos del header */}
+      {/* Estos son los iconos del header
+        Los iconos son usando ICONIFY */}
       {menu.map((item, index) => {
         return <HeaderItem key={index} icon={item.icon} name={item.name} />;
       })}
